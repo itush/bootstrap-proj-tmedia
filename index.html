@@ -13,7 +13,7 @@
     <title>Bootstrap Project</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark p-5 navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark py-3 navbar-dark fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">FE BootCamp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="navbar-toggler-icon"></i></button>
@@ -28,13 +28,13 @@
         </div>
     </nav>
         <!-- showcase -->
-    <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-center">
                 <div>
                     <h1>Become a<span class="text-warning"> Jr. Frontend Dev </span>in 90 days!</h1>
-                    <p class="lead my-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis sint aut ea quaerat mollitia repellat, odio, exercitationem, obcaecati corporis repudiandae amet veniam illo a similique tenetur doloremque. Necessitatibus, consequuntur!</p>
-                    <button class="btn btn-primary btn-lg my-5">Start Now!</button>
+                    <p class="lead my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis sint aut ea quaerat mollitia repellat, odio, exercitationem, obcaecati corporis repudiandae amet veniam illo a similique tenetur doloremque. Necessitatibus, consequuntur!</p>
+                    <button class="btn btn-primary btn-lg my-3">Start Now!</button>
                 </div>
                 <img src="./img/showcase.svg" alt="#" class="img-fluid d-none d-sm-block w-50">
             </div>
@@ -57,7 +57,7 @@
     <!-- Grid system -->
     <section class="p-5">
         <div class="container">
-            <div class="row">
+            <div class="row text-center g-4">
                 <div class="col-md">
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
@@ -71,14 +71,14 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
+                                <i class="bi bi-person-square"></i>
                         </div>
-                        <h3 class="card-title mb-3">Virtual</h3>
+                        <h3 class="card-title mb-3">Hybrid</h3>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi deserunt quae, illo illum totam.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <a href="#" class="btn btn-dark">Read More</a>
                         </div>                        
                     </div>
                 </div>
@@ -86,9 +86,9 @@
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
+                                <i class="bi bi-people"></i>
                         </div>
-                        <h3 class="card-title mb-3">Virtual</h3>
+                        <h3 class="card-title mb-3">offline</h3>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi deserunt quae, illo illum totam.</p>
                         <a href="#" class="btn btn-primary">Read More</a>
                         </div>                        
@@ -98,8 +98,93 @@
         </div>
     </section>
 
+<!-- learn sections -->
+
+<section class="p-5" id="learn">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="./img/fundamentals.svg" alt="#" class="img-fluid">
+            </div>
+            <div class="col-md p-5">
+                <h2>Learn the fundamentals</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium nesciunt veniam aliquid animi impedit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quos eveniet quaerat maiores sint quasi, libero suscipit corporis aliquid voluptatibus in amet, cupiditate nemo ducimus quae voluptates impedit, beatae quia!</p>
+
+                <a href="#" class="btn btn-light mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+<section class="p-5 bg-dark text-light" id="learn">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            
+            <div class="col-md p-5">
+                <h2>Learn React</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium nesciunt veniam aliquid animi impedit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quos eveniet quaerat maiores sint quasi, libero suscipit corporis aliquid voluptatibus in amet, cupiditate nemo ducimus quae voluptates impedit, beatae quia!</p>
+
+                <a href="#" class="btn btn-light mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More
+                </a>
+            </div>
+
+            <div class="col-md">
+                <img src="./img/react.svg" alt="#" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accordion -->
+<section class="p-5" id="questions">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+        <div class="accordion accordion-flush" id="questions">
+            <!-- accordion item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="question-one">
+                  Where are you from?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae et qui pariatur ut mollitia consequatur. Voluptate sed quaerat, odio ad accusamus vel atque vitae perspiciatis!</div>
+              </div>
+            </div>
+            <!-- accordion item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="question-two">
+                  Who can attend this?
+                </button>
+              </h2>
+              <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, laborum totam! Facere, voluptatibus sunt repudiandae ratione velit enim dicta minus vel ducimus, officia, rem excepturi?</div>
+              </div>
+            </div>
+            <!-- accordion item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="question-three">
+                  What is the courese fee?
+                </button>
+              </h2>
+              <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta repudiandae minus saepe rem ducimus omnis accusantium nisi dolor, nulla illo aliquam consectetur quo aperiam!</div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- instructors -->
+<section class="p-5 bg-primary" id="instructors"></section>
 
 
 
